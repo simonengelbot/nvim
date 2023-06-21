@@ -8,6 +8,10 @@ set clipboard=unnamedplus
 set nohlsearch
 set softtabstop=4 shiftwidth=4 expandtab
 
+" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+map <space> /
+map <C-space> ?
+
 " In Neovim, zL only works when 'warp' is off
 " set nowrap
 
@@ -41,12 +45,12 @@ noremap ` '
 set omnifunc=syntaxcomplete#Complete
 
 " Swap , and : in normal mode
-noremap : ,
-noremap , :
-nnoremap g: g,
-nnoremap g, g:
-nnoremap q: q,
-nnoremap q, q:
+"  noremap : ,
+"  noremap , :
+"  nnoremap g: g,
+"  nnoremap g, g:
+"  nnoremap q: q,
+"  nnoremap q, q:
 
 " Remap line motion commands
 nnoremap k gk
@@ -68,7 +72,7 @@ set smartcase
 set wildignorecase
 
 " Personal preferences not set by sensible.vim
-let g:mapleader=" "
+let g:mapleader=","
 set history=5000
 set noswapfile
 
